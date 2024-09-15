@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+// Модель данных для парсинга ответа от API
+struct VisitorsResponse: Codable {
+    let statistics: [VisitorData]
+}
+
+struct VisitorData: Codable {
+    let user_id: Int
+}

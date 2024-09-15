@@ -13,6 +13,12 @@
 		36C1AD352C92EF44000A9861 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 36C1AD342C92EF44000A9861 /* Base */; };
 		36C1AD372C92EF46000A9861 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36C1AD362C92EF46000A9861 /* Assets.xcassets */; };
 		36C1AD3A2C92EF46000A9861 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 36C1AD392C92EF46000A9861 /* Base */; };
+		36C1AD462C92F667000A9861 /* VisitorsGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C1AD452C92F667000A9861 /* VisitorsGraph.swift */; };
+		36C1AD482C93033B000A9861 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C1AD472C93033B000A9861 /* NetworkService.swift */; };
+		36C1AD4B2C9311EA000A9861 /* Gilroy-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36C1AD4A2C9311EA000A9861 /* Gilroy-Medium.ttf */; };
+		36C1AD4D2C931523000A9861 /* VisitorsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C1AD4C2C931523000A9861 /* VisitorsModel.swift */; };
+		36C1AD512C931835000A9861 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 36C1AD502C931835000A9861 /* DGCharts */; };
+		36C1AD532C931835000A9861 /* DGChartsDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 36C1AD522C931835000A9861 /* DGChartsDynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,10 @@
 		36C1AD362C92EF46000A9861 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36C1AD392C92EF46000A9861 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36C1AD3B2C92EF46000A9861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36C1AD452C92F667000A9861 /* VisitorsGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorsGraph.swift; sourceTree = "<group>"; };
+		36C1AD472C93033B000A9861 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		36C1AD4A2C9311EA000A9861 /* Gilroy-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Medium.ttf"; sourceTree = "<group>"; };
+		36C1AD4C2C931523000A9861 /* VisitorsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36C1AD532C931835000A9861 /* DGChartsDynamic in Frameworks */,
+				36C1AD512C931835000A9861 /* DGCharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +68,67 @@
 		36C1AD2C2C92EF44000A9861 /* Test */ = {
 			isa = PBXGroup;
 			children = (
-				36C1AD2D2C92EF44000A9861 /* AppDelegate.swift */,
-				36C1AD2F2C92EF44000A9861 /* SceneDelegate.swift */,
-				36C1AD312C92EF44000A9861 /* ViewController.swift */,
-				36C1AD332C92EF44000A9861 /* Main.storyboard */,
-				36C1AD362C92EF46000A9861 /* Assets.xcassets */,
-				36C1AD382C92EF46000A9861 /* LaunchScreen.storyboard */,
-				36C1AD3B2C92EF46000A9861 /* Info.plist */,
+				36C1AD4E2C931618000A9861 /* Network */,
+				36C1AD492C9311C1000A9861 /* Fonts */,
+				36C1AD442C92F0B1000A9861 /* Models */,
+				36C1AD432C92F0A3000A9861 /* Views */,
+				36C1AD422C92F095000A9861 /* System */,
+				36C1AD412C92F087000A9861 /* Controllers */,
 			);
 			path = Test;
+			sourceTree = "<group>";
+		};
+		36C1AD412C92F087000A9861 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				36C1AD312C92EF44000A9861 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		36C1AD422C92F095000A9861 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				36C1AD332C92EF44000A9861 /* Main.storyboard */,
+				36C1AD382C92EF46000A9861 /* LaunchScreen.storyboard */,
+				36C1AD362C92EF46000A9861 /* Assets.xcassets */,
+				36C1AD3B2C92EF46000A9861 /* Info.plist */,
+				36C1AD2D2C92EF44000A9861 /* AppDelegate.swift */,
+				36C1AD2F2C92EF44000A9861 /* SceneDelegate.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		36C1AD432C92F0A3000A9861 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				36C1AD452C92F667000A9861 /* VisitorsGraph.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		36C1AD442C92F0B1000A9861 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				36C1AD4C2C931523000A9861 /* VisitorsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		36C1AD492C9311C1000A9861 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				36C1AD4A2C9311EA000A9861 /* Gilroy-Medium.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		36C1AD4E2C931618000A9861 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				36C1AD472C93033B000A9861 /* NetworkService.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +147,10 @@
 			dependencies = (
 			);
 			name = Test;
+			packageProductDependencies = (
+				36C1AD502C931835000A9861 /* DGCharts */,
+				36C1AD522C931835000A9861 /* DGChartsDynamic */,
+			);
 			productName = Test;
 			productReference = 36C1AD2A2C92EF44000A9861 /* Test.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +179,9 @@
 				Base,
 			);
 			mainGroup = 36C1AD212C92EF44000A9861;
+			packageReferences = (
+				36C1AD4F2C931835000A9861 /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			productRefGroup = 36C1AD2B2C92EF44000A9861 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36C1AD372C92EF46000A9861 /* Assets.xcassets in Resources */,
+				36C1AD4B2C9311EA000A9861 /* Gilroy-Medium.ttf in Resources */,
 				36C1AD3A2C92EF46000A9861 /* Base in Resources */,
 				36C1AD352C92EF44000A9861 /* Base in Resources */,
 			);
@@ -138,9 +210,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36C1AD4D2C931523000A9861 /* VisitorsModel.swift in Sources */,
+				36C1AD482C93033B000A9861 /* NetworkService.swift in Sources */,
 				36C1AD322C92EF44000A9861 /* ViewController.swift in Sources */,
 				36C1AD2E2C92EF44000A9861 /* AppDelegate.swift in Sources */,
 				36C1AD302C92EF44000A9861 /* SceneDelegate.swift in Sources */,
+				36C1AD462C92F667000A9861 /* VisitorsGraph.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,12 +369,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J96ZM8K52F;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Test/Info.plist;
+				INFOPLIST_FILE = Test/System/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +381,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Makeev095.Test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -322,12 +400,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J96ZM8K52F;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Test/Info.plist;
+				INFOPLIST_FILE = Test/System/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,6 +412,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Makeev095.Test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -363,6 +444,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		36C1AD4F2C931835000A9861 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		36C1AD502C931835000A9861 /* DGCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 36C1AD4F2C931835000A9861 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGCharts;
+		};
+		36C1AD522C931835000A9861 /* DGChartsDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 36C1AD4F2C931835000A9861 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGChartsDynamic;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 36C1AD222C92EF44000A9861 /* Project object */;
 }
