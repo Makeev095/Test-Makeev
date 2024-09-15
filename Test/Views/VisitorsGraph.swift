@@ -90,8 +90,6 @@ class VisitorsGraph: UIView {
             
             visitorsLabel.topAnchor.constraint(equalTo: visitorsView.topAnchor, constant: 3),
             visitorsLabel.leadingAnchor.constraint(equalTo: visitorsView.leadingAnchor),
-//            visitorsLabel.trailingAnchor.constraint(equalTo: trailingAnchor),
-//            visitorsLabel.bottomAnchor.constraint(equalTo: bottomAnchor),
             
             visitorsGraphImage.topAnchor.constraint(equalTo: innerView.topAnchor,constant: 25),
             visitorsGraphImage.leadingAnchor.constraint(equalTo: innerView.leadingAnchor,constant: 20),
@@ -100,8 +98,6 @@ class VisitorsGraph: UIView {
             
             visitorsAmountPerMounth.leadingAnchor.constraint(equalTo: visitorsGraphImage.trailingAnchor, constant: 20),
             visitorsAmountPerMounth.topAnchor.constraint(equalTo: innerView.topAnchor, constant: 16),
-//            visitorsAmountPerMounth.widthAnchor.constraint(equalToConstant: 59),
-//            visitorsAmountPerMounth.heightAnchor.constraint(equalToConstant: 25),
             
             visitorsAmountPerMounthArrow.widthAnchor.constraint(equalToConstant: 25),
             visitorsAmountPerMounthArrow.heightAnchor.constraint(equalToConstant: 25),
@@ -111,10 +107,6 @@ class VisitorsGraph: UIView {
             visitorsPerMounthSecondaryText.topAnchor.constraint(equalTo: innerView.topAnchor, constant: 48),
             visitorsPerMounthSecondaryText.leadingAnchor.constraint(equalTo: visitorsAmountPerMounth.leadingAnchor),
             visitorsPerMounthSecondaryText.trailingAnchor.constraint(equalTo: innerView.trailingAnchor, constant: 20),
-//            visitorsPerMounthSecondaryText.widthAnchor.constraint(equalToConstant: 189),
-//            visitorsPerMounthSecondaryText.heightAnchor.constraint(equalToConstant: 39),
-            
-            
             
             // Констрейнты для visitorsView
             visitorsView.topAnchor.constraint(equalTo: topAnchor, constant: 10),
@@ -126,7 +118,7 @@ class VisitorsGraph: UIView {
             innerView.topAnchor.constraint(equalTo: visitorsLabel.bottomAnchor, constant: 10),
             innerView.leadingAnchor.constraint(equalTo: visitorsView.leadingAnchor),
             innerView.trailingAnchor.constraint(equalTo: visitorsView.trailingAnchor),
-//            innerView.bottomAnchor.constraint(equalTo: visitorsView.bottomAnchor)
+            //            innerView.bottomAnchor.constraint(equalTo: visitorsView.bottomAnchor)
             innerView.heightAnchor.constraint(equalToConstant: 98)
         ])
     }
